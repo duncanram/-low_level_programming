@@ -1,6 +1,3 @@
-C - argc, argv
-
-
 TASKS
 
 
