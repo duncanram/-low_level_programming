@@ -11,6 +11,7 @@
  */
 int check_num(char *str)
 {
+<<<<<<< HEAD
     unsigned int count;
 
     count = 0;
@@ -23,6 +24,21 @@ int check_num(char *str)
         count++;
     }
     return (1);
+=======
+	/* Declaring variables */
+	unsigned int count;
+
+	count = 0;
+	while (count < strlen(str))
+	{
+		if (!isdigit(str[count])) /* check if str contains digit */
+		{
+			return (0);
+		}
+		count++;
+	}
+	return (1);
+>>>>>>> 37b3512e239bcfeb8b6d577e80bef34f1fd68b4e
 }
 
 /**
@@ -34,6 +50,7 @@ int check_num(char *str)
  */
 int main(int argc, char *argv[])
 {
+<<<<<<< HEAD
     int count;
     int str_to_int;
     int sum = 0;
@@ -57,4 +74,30 @@ int main(int argc, char *argv[])
     printf("%d\n", sum);
 
     return (0);
+=======
+	int count;
+	int str_to_int;
+	int sum = 0;
+
+	count = 1;
+	while (count < argc)
+	{
+		if (check_num(argv[count]))
+		{
+			str_to_int = atoi(argv[count]); /* ATOI --> convert string to int */
+			sum += str_to_int;
+		}
+		else
+		{
+			printf("Error\n");
+			return (1);
+		}
+		count++;
+	}
+
+	printf("%d\n", sum); /* print sum */
+
+	return (0);
+>>>>>>> 37b3512e239bcfeb8b6d577e80bef34f1fd68b4e
 }
+
