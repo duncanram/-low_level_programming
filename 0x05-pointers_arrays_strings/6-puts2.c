@@ -1,10 +1,12 @@
 #include "main.h"
+
 /**
- * puts2 - function should print only one character out of two
- * starting with the first one
+ * puts2 - function should print only 1 character out of 2.
+ * starting with the first 1.
  * @str: input
  * Return: print
  */
+
 void puts2(char *str)
 {
 	int longi = 0;
