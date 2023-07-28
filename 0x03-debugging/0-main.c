@@ -1,8 +1,9 @@
 #include "main.h"
 /**
-* main - Test function for positive or negative
+* main - to test function for +ve or -ve.
 * Return: 0
 */
+
 int main(void)
 {
 int i;
